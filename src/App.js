@@ -122,6 +122,7 @@ const App = () => {
             let word = charArray.join("").toLowerCase();
             if(!wordList[word.charAt(0)].includes(word)) {
                 handleError();
+                handleMessage("Not in word list");
                 return;
               }
             enterBoardWord(word);
