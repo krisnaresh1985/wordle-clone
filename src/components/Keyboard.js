@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { keys } from '../constants/constants';
 import '../style/keyboard.css';
 
-const Keyboard = ({boardData,handleKeyPress}) => {
+// const Keyboard = ({boardData,handleKeyPress}) => {
 const Keyboard = ({ boardData, handleKeyPress }) => {
   
     function handleKeyboard(key) { 
@@ -37,5 +37,6 @@ const Keyboard = ({ boardData, handleKeyPress }) => {
            
         </div>);
 };
+// }
 
 export default Keyboard;
